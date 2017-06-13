@@ -1,0 +1,52 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 400;
+  src: local("-apple-system"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("Tahoma");
+}
+$font-stack: system, -apple-system, Avenir Next, MacBlinkSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+
+#app,
+input,
+textarea {
+  font-family: $font-stack;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $cl-text-sub;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  @extend .mt0;
+}
+
+h1 {
+  @extend .f1;
+  @extend .lh-title;
+}
+
+h2 {
+  @extend .f2;
+  @extend .lh-title;
+}
+
+h4 {
+  @extend .f4;
+  @extend .lh-title;
+}
+
+p {
+  @extend .f5;
+  @extend .lh-copy;
+  @extend .w-90-ns;
+}
+
+a {
+  @extend .link;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+}
+
